@@ -1,1 +1,65 @@
-<svg id="layer_1" data-name="layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400"><defs><style>.cls-1{fill:#149cc5;}.cls-2{fill:#69caa4;}.cls-3{fill:url(#unnamed_gradient_19);}.cls-4{fill:#75cccc;}</style><linearGradient id="unnamed_gradient_19" x1="88.669" y1="59.213" x2="334.656" y2="389.988" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#b2f288"/><stop offset="0.181" stop-color="#80d79c"/><stop offset="0.371" stop-color="#52bead"/><stop offset="0.554" stop-color="#2faabb"/><stop offset="0.724" stop-color="#159cc5"/><stop offset="0.878" stop-color="#0594cb"/><stop offset="1" stop-color="#0091cd"/></linearGradient></defs><title>SQLBot</title><path class="cls-1" d="M377.77,182.253h-3.078a170.568,170.568,0,0,1,2.752,30.636,152.429,152.429,0,0,1-4.472,37.444h8.676a14,14,0,0,0,14-14v-36.2A17.879,17.879,0,0,0,377.77,182.253Z"/><path class="cls-2" d="M22.555,212.889a170.659,170.659,0,0,1,2.752-30.636H22.23A17.879,17.879,0,0,0,4.352,200.132v36.2a14,14,0,0,0,14,14h8.676A152.38,152.38,0,0,1,22.555,212.889Z"/><path class="cls-3" d="M200,50.6c-91.855,0-166.317,70.431-166.317,162.286S108.146,349.4,200,349.4,366.316,304.744,366.316,212.89,291.854,50.6,200,50.6Zm40.353,231.071H159.647a79.892,79.892,0,0,1-33.12-7.138c-7.515-3.412-29.437,3.755-35.5-1.692-7.347-6.6,1.56-26.251-2.95-35.147a79.849,79.849,0,0,1-8.624-36.215h0a80.191,80.191,0,0,1,80.191-80.191h80.707a80.191,80.191,0,0,1,80.191,80.191h0A80.192,80.192,0,0,1,240.354,281.675Z"/><path class="cls-3" d="M200,50.6c-91.855,0-166.317,70.431-166.317,162.286S108.146,349.4,200,349.4,366.316,304.744,366.316,212.89,291.854,50.6,200,50.6Zm40.353,231.071H159.647a79.892,79.892,0,0,1-33.12-7.138c-7.515-3.412-29.437,3.755-35.5-1.692-7.347-6.6,1.56-26.251-2.95-35.147a79.849,79.849,0,0,1-8.624-36.215h0a80.191,80.191,0,0,1,80.191-80.191h80.707a80.191,80.191,0,0,1,80.191,80.191h0A80.192,80.192,0,0,1,240.354,281.675Z"/><rect class="cls-4" x="116.887" y="198.867" width="23.721" height="51.728"/><rect class="cls-4" x="164.542" y="175.91" width="23.721" height="74.685"/><rect class="cls-4" x="212.197" y="205.841" width="23.721" height="44.754"/><rect class="cls-4" x="259.392" y="166.029" width="23.721" height="84.566"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+<!-- 科技感机器人头部 -->
+<circle cx="15" cy="15" r="11" fill="url(#paint0_linear_477_9132)" stroke="url(#paint1_linear_477_9132)" stroke-width="0.5"/>
+
+<!-- 科技感天线 -->
+<path d="M15 4L15 6" stroke="#6366F1" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="15" cy="3" r="1.5" fill="#6366F1"/>
+
+<!-- 左右天线装饰 -->
+<path d="M7 8L5 6" stroke="#818CF8" stroke-width="1" stroke-linecap="round"/>
+<circle cx="4.5" cy="5.5" r="0.8" fill="#818CF8"/>
+<path d="M23 8L25 6" stroke="#818CF8" stroke-width="1" stroke-linecap="round"/>
+<circle cx="25.5" cy="5.5" r="0.8" fill="#818CF8"/>
+
+<!-- 科技感眼睛 - 发光效果 -->
+<circle cx="11" cy="13" r="2.5" fill="#6366F1" opacity="0.3"/>
+<circle cx="11" cy="13" r="1.5" fill="#A78BFA"/>
+<circle cx="11.5" cy="12.5" r="0.5" fill="#FFFFFF"/>
+
+<circle cx="19" cy="13" r="2.5" fill="#6366F1" opacity="0.3"/>
+<circle cx="19" cy="13" r="1.5" fill="#A78BFA"/>
+<circle cx="19.5" cy="12.5" r="0.5" fill="#FFFFFF"/>
+
+<!-- W字形核心能量标识 -->
+<path d="M9 17.5L10.5 22L12.5 18.5L14.5 22L16.5 18.5L18.5 22L20 17.5" stroke="#A78BFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.9"/>
+<path d="M9 17.5L10.5 22L12.5 18.5L14.5 22L16.5 18.5L18.5 22L20 17.5" stroke="#FFFFFF" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.6"/>
+
+<!-- 科技电路纹理 -->
+<path d="M6 15L8 15M22 15L24 15" stroke="#818CF8" stroke-width="0.8" opacity="0.6"/>
+<path d="M8 10L6 12M22 10L24 12" stroke="#818CF8" stroke-width="0.8" opacity="0.6"/>
+<path d="M8 20L6 18M22 20L24 18" stroke="#818CF8" stroke-width="0.8" opacity="0.6"/>
+
+<!-- 底部科技装饰 -->
+<path d="M10 24C10 24 12 25.5 15 25.5C18 25.5 20 24 20 24" stroke="#818CF8" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+<rect x="13" y="25" width="4" height="1" rx="0.5" fill="#6366F1"/>
+
+<!-- 左右科技装饰 -->
+<path d="M4.5 15C4.5 15 3 15 3 13C3 11 4.5 11 4.5 11" stroke="#A78BFA" stroke-width="1" fill="none" opacity="0.7"/>
+<path d="M25.5 15C25.5 15 27 15 27 13C27 11 25.5 11 25.5 11" stroke="#A78BFA" stroke-width="1" fill="none" opacity="0.7"/>
+
+<!-- 能量点缀 -->
+<circle cx="7" cy="15" r="0.5" fill="#A78BFA" opacity="0.8"/>
+<circle cx="23" cy="15" r="0.5" fill="#A78BFA" opacity="0.8"/>
+<circle cx="15" cy="8" r="0.5" fill="#A78BFA" opacity="0.8"/>
+<circle cx="15" cy="23" r="0.5" fill="#A78BFA" opacity="0.8"/>
+
+<!-- 耳朵装饰 -->
+<path d="M28.3328 13.669H28.1019C28.2398 14.4271 28.3088 15.1961 28.3083 15.9667C28.3132 16.9131 28.2005 17.8564 27.9729 18.775H28.6236C28.9021 18.775 29.1691 18.6644 29.3661 18.4674C29.563 18.2705 29.6736 18.0035 29.6736 17.725V15.01C29.6736 14.8339 29.6389 14.6595 29.5716 14.4968C29.5042 14.3341 29.4054 14.1863 29.2809 14.0618C29.1564 13.9373 29.0086 13.8385 28.8459 13.7711C28.6832 13.7037 28.5088 13.669 28.3328 13.669Z" fill="#818CF8"/>
+<path d="M1.69164 15.9667C1.69114 15.1961 1.76022 14.4271 1.89804 13.669H1.66727C1.31164 13.669 0.970593 13.8103 0.719137 14.0617C0.467681 14.3132 0.326416 14.6543 0.326416 15.0099V17.7249C0.326416 18.0034 0.437041 18.2704 0.633954 18.4674C0.830867 18.6643 1.09794 18.7749 1.37642 18.7749H2.02712C1.79945 17.8563 1.68676 16.913 1.69164 15.9667Z" fill="#A78BFA"/>
+
+<defs>
+<linearGradient id="paint0_linear_477_9132" x1="6.6502" y1="4.44097" x2="25.0992" y2="29.2491" gradientUnits="userSpaceOnUse">
+<stop stop-color="#A78BFA"/>
+<stop offset="0.3" stop-color="#818CF8"/>
+<stop offset="0.6" stop-color="#6366F1"/>
+<stop offset="1" stop-color="#4F46E5"/>
+</linearGradient>
+<linearGradient id="paint1_linear_477_9132" x1="6.6502" y1="4.44097" x2="25.0992" y2="29.2491" gradientUnits="userSpaceOnUse">
+<stop stop-color="#A78BFA"/>
+<stop offset="0.3" stop-color="#818CF8"/>
+<stop offset="0.6" stop-color="#6366F1"/>
+<stop offset="1" stop-color="#4F46E5"/>
+</linearGradient>
+</defs>
+</svg>

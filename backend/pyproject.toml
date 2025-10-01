@@ -10,7 +10,7 @@ dependencies = [
     "tenacity<9.0.0,>=8.2.3",
     "pydantic>2.0",
     "alembic<2.0.0,>=1.12.1",
-    "httpx<1.0.0,>=0.25.1",
+    "httpx[socks]>=0.25.1,<1.0.0",
     "psycopg[binary]<4.0.0,>=3.1.13",
     "sqlmodel<1.0.0,>=0.0.21",
     # Pin bcrypt until passlib supports the latest
@@ -51,6 +51,7 @@ dependencies = [
     "dmpython>=2.5.22; platform_system != 'Darwin'",
     "redshift-connector>=2.1.8",
     "elasticsearch[requests] (>=7.10,<8.0)",
+    "httpcore[socks]>=1.0.9",
 ]
 
 [project.optional-dependencies]
@@ -73,7 +74,7 @@ explicit = true
 
 [[tool.uv.index]]
 name = "default"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
+url = "https://pypi.org/simple"
 default = true
 
 [[tool.uv.index]]

@@ -26,7 +26,7 @@ class Settings(BaseSettings):
         env_ignore_empty=True,
         extra="ignore",
     )
-    PROJECT_NAME: str = "SQLBot"
+    PROJECT_NAME: str = "weisoft SQLAI"
     API_V1_STR: str = "/api/v1"
     SECRET_KEY: str = secrets.token_urlsafe(32)
     # 60 minutes * 24 hours * 8 days = 8 days

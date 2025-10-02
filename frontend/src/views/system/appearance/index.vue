@@ -281,7 +281,7 @@ const COLOR_PANEL = [
 const fileList = ref<(UploadUserFile & { flag: string })[]>([])
 const navigateBg = ref('dark')
 const themeColor = ref('default')
-const customColor = ref('#1CBA90')
+const customColor = ref('#6366F1')
 const web = ref('')
 const bg = ref('')
 const login = ref('')
@@ -456,7 +456,7 @@ const init = () => {
         if (themeColor.value === 'custom') {
           setPageCustomColor(customColor.value)
         } else {
-          setPageCustomColor(isBlue.value ? '#3370FF' : '#1CBA90')
+          setPageCustomColor(isBlue.value ? '#3370FF' : '#6366F1')
         }
       })
     })
@@ -492,7 +492,7 @@ const themeColorChange = (val: any) => {
   if (themeColor.value === 'custom') {
     setPageCustomColor(customColor.value)
   } else {
-    setPageCustomColor(isBlue.value ? '#3370FF' : '#1CBA90')
+    setPageCustomColor(isBlue.value ? '#3370FF' : '#6366F1')
   }
 }
 const customColorChange = (val: any) => {

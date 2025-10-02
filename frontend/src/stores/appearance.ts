@@ -252,7 +252,7 @@ export const useAppearanceStore = defineStore('appearanceStore', {
       // }
       const obj = LicenseGenerator.getLicense()
       if (obj?.status !== 'valid') {
-        setCurrentColor('#1CBA90')
+        setCurrentColor('#6366F1')
         document.title = 'SQLBot'
         setLinkIcon()
         return
@@ -260,7 +260,7 @@ export const useAppearanceStore = defineStore('appearanceStore', {
       const resData = await request.get('/system/appearance/ui')
       this.loaded = true
       if (!resData?.length) {
-        setCurrentColor('#1CBA90')
+        setCurrentColor('#6366F1')
         setLinkIcon()
         return
       }
@@ -285,7 +285,7 @@ export const useAppearanceStore = defineStore('appearanceStore', {
           ? this.customColor
           : this.isBlue
             ? '#3370ff'
-            : '#1CBA90'
+            : '#6366F1'
       setCurrentColor(currentColor)
       this.bg = data.bg
       this.login = data.login

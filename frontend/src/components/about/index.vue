@@ -193,7 +193,7 @@ defineExpose({
         </el-upload>
       </div>
     </div>
-    <div class="name">2014-2025 版权所有 © 杭州飞致云信息科技有限公司</div>
+    <div class="name">2024-2025 © 上海未软人工智能科技有限公司</div>
   </el-dialog>
 </template>
 

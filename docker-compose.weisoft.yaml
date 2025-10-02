@@ -1,0 +1,97 @@
+version: '3.8'
+
+services:
+  weisoftsqlai:
+    image: registry.cn-hangzhou.aliyuncs.com/weisoft/weisoftsqlai:V1.2.0
+    container_name: weisoftsqlai
+    restart: always
+    privileged: true
+    networks:
+      - weisoftsqlai-network
+    ports:
+      - "8000:8000"   # 主应用端口
+      - "8001:8001"   # MCP 服务端口
+      #- "5432:5432"   # PostgreSQL 数据库端口(可选,如果需要外部访问)
+    environment:
+      # 数据库配置
+      POSTGRES_SERVER: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: sqlbot
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: Password123@pg
+      
+      # 项目基本设置
+      PROJECT_NAME: "weisoft SQLAI"
+      DEFAULT_PWD: "SQLBot@123456"
+      
+      # MCP 设置 (请替换为实际的服务器IP和端口)
+      SERVER_IMAGE_HOST: http://8.130.134.22:8001/images/
+      
+      # 认证与安全
+      SECRET_KEY: y5txe1mRmS_JpOrUzFzHEu-kIQn3lf7ll0AOv9DQh0s
+      
+      # CORS 设置 (根据实际部署域名修改)
+      BACKEND_CORS_ORIGINS: "http://localhost,http://localhost:5173,http://8.130.134.22,http://8.130.134.22:8000,http://8.130.134.22:8001"
+      
+      # 日志配置
+      LOG_LEVEL: "INFO"
+      SQL_DEBUG: "False"
+      
+      # 时区设置
+      TZ: Asia/Shanghai
+    volumes:
+      # 数据持久化目录
+      - ./data/sqlbot/excel:/opt/sqlbot/data/excel          # Excel 文件存储
+      - ./data/sqlbot/file:/opt/sqlbot/data/file            # 文件存储
+      - ./data/sqlbot/images:/opt/sqlbot/images             # 图片存储
+      - ./data/sqlbot/logs:/opt/sqlbot/app/logs             # 日志文件
+      - ./data/postgresql:/var/lib/postgresql/data          # PostgreSQL 数据目录
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 8G
+        reservations:
+          cpus: '2'
+          memory: 4G
+#可选: 如果需要单独部署 PostgreSQL 数据库
+#取消下面的注释并修改上面的 POSTGRES_SERVER 为 postgres
+  postgres:
+    image: registry.cn-qingdao.aliyuncs.com/dataease/postgres:17.6
+    container_name: weisoftsqlai-postgres
+    restart: always
+    networks:
+      - weisoftsqlai-network
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: sqlbot
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: Password123@pg
+      TZ: Asia/Shanghai
+    volumes:
+      - ./data/postgresql:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U root -d sqlbot"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 2G
+        reservations:
+          cpus: '1'
+          memory: 1G
+
+networks:
+  weisoftsqlai-network:
+    driver: bridge

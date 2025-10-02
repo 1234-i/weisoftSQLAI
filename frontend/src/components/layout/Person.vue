@@ -4,7 +4,6 @@ import Default_avatar_custom from '@/assets/img/Default-avatar.svg'
 import icon_admin_outlined from '@/assets/svg/icon_admin_outlined.svg'
 import icon_info_outlined_1 from '@/assets/svg/icon_info_outlined_1.svg'
 import { useAppearanceStoreWithOut } from '@/stores/appearance'
-import icon_maybe_outlined from '@/assets/svg/icon-maybe_outlined.svg'
 import icon_key_outlined from '@/assets/svg/icon-key_outlined.svg'
 import icon_translate_outlined from '@/assets/svg/icon_translate_outlined.svg'
 import icon_logout_outlined from '@/assets/svg/icon_logout_outlined.svg'
@@ -63,10 +62,6 @@ const changeLanguage = (lang: string) => {
   userApi.language(param).then(() => {
     window.location.reload()
   })
-}
-
-const openHelp = () => {
-  window.open(appearanceStore.getHelp || 'https://dataease.cn/sqlbot/', '_blank')
 }
 
 const openPwd = () => {
@@ -156,12 +151,6 @@ const logout = () => {
             <icon_info_outlined_1></icon_info_outlined_1>
           </el-icon>
           <div class="datasource-name">{{ $t('about.title') }}</div>
-        </div>
-        <div v-if="appearanceStore.getShowDoc" class="popover-item" @click="openHelp">
-          <el-icon size="16">
-            <icon_maybe_outlined></icon_maybe_outlined>
-          </el-icon>
-          <div class="datasource-name">{{ $t('common.help') }}</div>
         </div>
         <div style="height: 4px; width: 100%"></div>
         <div class="popover-item mr4" @click="logout">
